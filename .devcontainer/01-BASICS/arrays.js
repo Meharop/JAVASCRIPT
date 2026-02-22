@@ -50,4 +50,17 @@ const dc = ["superman","batman","flash"]
 // const allHeros = marvel_heros.concat(dc)
 // console.log(allHemaros);
 const all_new_heros = [...marvel_heros,...dc]
-log
+console.log(all_new_heros);
+
+const another_array = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
+const real_another_array = another_array.flat(Infinity)
+console.log(real_another_array);
+console.log(Array.isArray("shahziab"))
+console.log(Array.from("shahziab"))
+console.log(Array.from({name :"shahziab"})) //intresting
+let scored1 = 100 
+let scored2 = 200 
+let scored3 = 300 
+
+console.log(Array.of(scored1,scored2,sco));
+

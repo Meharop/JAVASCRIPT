@@ -33,6 +33,24 @@ Jsuser.greetingtwo = function(){
     console.log( `hello js user, ${this.name}`);
     
 }
-console.log(Jsuser.greeting());
-console.log(Jsuser.greetingtwo());
+// console.log(Jsuser.greeting());
+// console.log(Jsuser.greetingtwo());
+const newsym = Symbol ('key1')
+const mydata = { 
 
+    name : "sayang",
+    class : "bscs",
+    [newsym]: "newkey1",
+    number : 843654973576
+}
+console.log(mydata['class'] );
+
+mydata.name = "cintaku"
+mydata.greetings = function(){
+    console.log(`hello  ,${this.name}`);
+    
+}
+console.log(mydata);
+console.log(mydata[newsym]);
+
+ console.log(mydata.greetings());
