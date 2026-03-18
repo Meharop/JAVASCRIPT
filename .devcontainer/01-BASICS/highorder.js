@@ -37,31 +37,52 @@ for (const greet of greeting) {
 // }
 // forin loop
 
-const MyObject = {
+// const MyObject = {
 
-    JS : 'javascript',
-    cpp : 'c++',
-    rb : "rubby"}
-    for (const key in MyObject) {
-       console.log(`${key} is short cut for ${MyObject[key]}`);
+//     JS : 'javascript',
+//     cpp : 'c++',
+//     rb : "rubby"}
+//     for (const key in MyObject) {
+//        console.log(`${key} is short cut for ${MyObject[key]}`);
        
         
         
-    }
+//     }
 
-    const programming =["js","rb","py","java","cpp"]
-    for (const key in programming) {
+    // const programming =["js","rb","py","java","cpp"]
+    // for (const key in programming) {
         
-        console.log(programming[key]);
+    //     console.log(programming[key]);
         
-    }
+    // }
 // foreach
  const coding =["js","rb","py","java","cpp"]
 
 //  coding.forEach(  function (val){console.log(val);
 //  })
-// coding.forEach(  (item)=> {
+// coding.forEach(  (item ,index , arr)=> {
 
-//     console.log(item);
+//     console.log(item) , index, arr
     
 // })
+
+const myCoding = [
+
+    {
+        languageName : "javascript",
+        languageFIleName : "js"
+    },
+    {
+        languageName : "java",
+        languageFIleName : "java"
+    },
+    {
+        languageName : "python",
+        languageFIleName : "py"
+    }
+]
+
+myCoding.forEach(  (item) => {
+    console.log(`${item.languageFIleName} reffers to ${item.languageName}`);
+    
+})
